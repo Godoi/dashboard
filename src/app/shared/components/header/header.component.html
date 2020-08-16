@@ -1,0 +1,14 @@
+<header
+  class="navbar-collapse"
+  [ngClass]="show ? 'navbar-collapse--open' : 'navbar-collapse--close'"
+>
+  <div
+    class="menu-btn"
+    [ngClass]="show ? 'menu-btn--open' : 'menu-btn--close'"
+    (click)="toggleOpenMenu()"
+  >
+    <div class="menu-btn__burger"></div>
+  </div>
+
+  <h1 class="navbar-collapse__title">Portal GED</h1>
+</header>

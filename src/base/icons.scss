@@ -1,0 +1,29 @@
+.icon {
+  &::before {
+    content: '';
+    height: 80px;
+    width: 80px;
+    @media (max-width: 500px) {
+      width: 130px;
+    }
+  }
+}
+
+.i-capture-documents {
+  &::before {
+    background-image: url('/assets/icon/i-capture-documents.png');
+  }
+}
+
+.i-consult-documents {
+  &::before {
+    background-image: url('/assets/icon/i-consult-documents.png');
+  }
+}
+
+.bi {
+  color: map-get($colors, c-white);
+  position: absolute;
+  right: 10px;
+  z-index: 10;
+}

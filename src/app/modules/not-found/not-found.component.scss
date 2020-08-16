@@ -1,0 +1,33 @@
+@import 'variables';
+
+.not-found {
+  &__content {
+    margin: auto;
+    width: 750px;
+    z-index: 10;
+  }
+
+  h1 {
+    color: map-get($colors, vblack);
+    font-size: 4em;
+    margin: 100px 0 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: map-get($colors, vblack);
+    font-size: 1.125em;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 687px) {
+    &__content {
+      width: 88%;
+    }
+
+    h1 {
+      font-size: 2.8em;
+    }
+  }
+}

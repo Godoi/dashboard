@@ -55,9 +55,15 @@
     }
   },
   "lint-staged": {
-    "*.{css,scss,js,ts}": ["npm run prettify"],
-    "*.{css,scss}": ["npm run lint:css"],
-    "*.{js,ts}": ["npm run lint:js"]
+    "*.{css,scss,js,ts}": [
+      "npm run prettify"
+    ],
+    "*.{css,scss}": [
+      "npm run lint:css"
+    ],
+    "*.{js,ts}": [
+      "npm run lint:js"
+    ]
   },
   "dependencies": {
     "@angular/animations": "~10.0.6",
@@ -69,6 +75,9 @@
     "@angular/platform-browser": "~10.0.6",
     "@angular/platform-browser-dynamic": "~10.0.6",
     "@angular/router": "~10.0.6",
+    "@ng-bootstrap/ng-bootstrap": "^8.0.0-beta.1",
+    "@ngrx/store": "^10.0.0",
+    "bootstrap": "^4.5.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
