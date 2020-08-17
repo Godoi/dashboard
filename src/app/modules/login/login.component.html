@@ -1,0 +1,39 @@
+<div class="modal-login">
+  <form
+    #f="ngForm"
+    class="container-login"
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <label for="userName">
+      User name: *
+      <input
+        type="text"
+        id="userName"
+        class="form-control"
+        formControlName="userName"
+        data-cy="username"
+        required
+      />
+    </label>
+    <label for="pass">
+      Password: *
+      <input
+        type="password"
+        class="form-control"
+        formControlName="password"
+        data-cy="password"
+        required
+      />
+    </label>
+
+    <button
+      class="btn btn-sicredi btn-login"
+      type="submit"
+      [disabled]="!f.valid"
+      data-cy="cySubmit"
+    >
+      Sign in
+    </button>
+  </form>
+</div>

@@ -3,24 +3,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./out-tsc/app",
-    "types": [
-      "jest"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "types": ["jest"],
+    "typeRoots": ["node_modules/@types"]
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ],
-  "exclude": [
-    "src/test.ts",
-    "src/**/*.spec.ts",
-    "cypress",
-    "**/*.stories.*"
-  ]
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"],
+  "exclude": ["src/test.ts", "src/**/*.spec.ts", "cypress", "**/*.stories.*"]
 }
