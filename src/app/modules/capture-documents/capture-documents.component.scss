@@ -1,7 +1,12 @@
 @import 'variables';
 
 .capture-documents {
+  margin-bottom: 40px;
   margin-top: 40px;
+
+  .container {
+    margin-bottom: 0;
+  }
 
   h1 {
     margin-bottom: 20px;
@@ -54,7 +59,16 @@
   }
 
   &__button {
+    margin-bottom: 0 !important;
     text-align: right;
+  }
+}
+
+.col-add {
+  display: flex;
+
+  &__input {
+    margin-right: 30px;
   }
 }
 
@@ -62,13 +76,47 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 40px;
 
+  &__first {
+    padding-top: 0;
+  }
+
   h4 {
     color: #606169;
     font-size: 1.2em;
   }
 }
 
+.box-location {
+  margin-bottom: 40px !important;
+
+  &__col {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+  }
+
+  .row-btn {
+    margin-bottom: 0;
+    text-align: right;
+
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (max-width: 575px) {
+  .col-information {
+    margin-bottom: 20px;
+  }
+
   .capture-documents {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -91,26 +139,5 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
-
-  .col-mob-desc {
-    width: 82%;
-  }
-
-  .col-mob {
-    margin-bottom: 10px;
-    width: 98%;
-  }
-}
-
-@media (max-width: 375px) {
-  .col-mob-desc {
-    width: 74%;
-  }
-}
-
-@media (max-width: 320px) {
-  .col-mob-desc {
-    width: 66%;
   }
 }

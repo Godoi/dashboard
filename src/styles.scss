@@ -3,7 +3,7 @@
 body {
   background: map-get($colors, c-lightgray);
   font-family: 'Google Sans Text Beta', Roboto, Arial, sans-serif;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 h1,
@@ -28,7 +28,7 @@ h1 {
   padding: 40px;
 }
 
-.container {
+.middle {
   background-clip: border-box;
   background-color: map-get($colors, c-white);
   border: 0;
@@ -70,7 +70,7 @@ h1 {
 }
 
 @media (max-width: 500px) {
-  .container {
+  .middle {
     padding: 20px;
   }
 }

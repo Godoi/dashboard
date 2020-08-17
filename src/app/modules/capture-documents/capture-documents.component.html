@@ -1,8 +1,38 @@
-<app-header-location></app-header-location>
+<app-breadcrumb></app-breadcrumb>
 <section class="pag-capture-documents capture-documents container-fluid">
-  <div class="container">
-    <h1 class="title">Capturar Documentos Administrativos</h1>
+  <div class="container middle box-location">
+    <div class="row">
+      <div class="box-location__col">
+        <div class="col">
+          <label for="inputEntity">Entidade </label>
+          <input id="inputEntity" type="text" class="form-control" />
+        </div>
+        <div class="col">
+          <label for="inputName">Nome </label>
+          <input id="inputName" type="text" class="form-control" />
+        </div>
+      </div>
 
+      <div class="box-location__col">
+        <div class="col">
+          <label for="inputCoop">Cooperativa </label>
+          <input id="inputCoop" type="text" class="form-control" />
+        </div>
+        <div class="col">
+          <label for="inputUnity">Unidade </label>
+          <input id="inputUnity" type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-btn">
+      <div class="col">
+        <button type="submit" class="btn btn-sicredi">Atualizar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container middle">
     <div class="row">
       <div class="col">
         <label for="inputType">Tipo </label>
@@ -27,7 +57,7 @@
     </div>
 
     <div class="row row-mob">
-      <div class="col-mob col-xl-6 col-md-5 col-sm-5 col">
+      <div class="col col-information">
         <label for="inputInformation">Informações </label>
         <select id="inputInformation" class="form-control">
           <option selected>Selecione...</option>
@@ -37,13 +67,15 @@
           <option>Information 04</option>
         </select>
       </div>
-      <div class="col-mob-desc col-xl-6 col-md-6 col-sm-6 col">
+      <div class="col">
         <label for="inputDescription">Descrição</label>
         <div class="row">
-          <div class="col col-md-9 col-sm-7">
-            <input type="text" class="form-control" id="inputDescription" />
-          </div>
-          <div class="col-2">
+          <div class="col col-add">
+            <input
+              type="text"
+              class="form-control col-add__input"
+              id="inputDescription"
+            />
             <button type="button" class="btn btn-sicredi">Adicionar</button>
           </div>
         </div>

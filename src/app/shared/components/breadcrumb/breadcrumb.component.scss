@@ -1,0 +1,23 @@
+@import 'variables';
+
+.breadcrumb {
+  background: map-get($colors, c-white);
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  min-height: 50px;
+  padding: 15px 40px;
+  position: relative;
+  z-index: 10;
+
+  .row {
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    padding: 15px 18px 0;
+  }
+}
