@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import { Subscription } from 'rxjs'
+
 import { MenuService } from '../../../core/services/menu.service'
 
 @Component({
