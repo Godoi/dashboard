@@ -50,6 +50,10 @@
   a:hover {
     color: map-get($colors, sicredi);
   }
+
+  .box-logo {
+    display: block;
+  }
 }
 
 .menu {

@@ -13,11 +13,22 @@
   position: relative;
   z-index: 10;
 
+  a {
+    color: map-get($colors, sicredi-dark);
+  }
+
   .row {
     width: 100%;
   }
 
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   @media (max-width: 500px) {
-    padding: 15px 18px 0;
+    padding: 15px 18px;
   }
 }

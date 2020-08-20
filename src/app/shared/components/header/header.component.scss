@@ -17,11 +17,6 @@
   width: 100%;
   z-index: 20;
 
-  .logo {
-    left: 15px;
-    position: absolute;
-  }
-
   &__title {
     color: map-get($colors, c-white);
     font-size: 1.5em;
@@ -32,23 +27,40 @@
 
   &--close {
     margin-left: 0;
+
+    @media (max-width: 500px) {
+      .menu-btn {
+        left: 60px;
+      }
+
+      .navbar-collapse__title {
+        margin-right: 0;
+      }
+    }
   }
 
   &--open {
     margin-left: 68px;
+
+    @media (max-width: 500px) {
+      .navbar-collapse__title {
+        margin-right: 56px;
+      }
+    }
   }
 
   .box-logo {
-    background-color: map-get($colors, c-white);
-    left: 0;
-    padding: 16px;
+    left: 15px;
+    overflow: hidden;
     position: absolute;
-    top: 0;
+    @media (max-width: 500px) {
+      width: 40px;
+    }
   }
 
   .container {
     text-align: center;
-    @media (max-width: 700px) {
+    @media (max-width: 500px) {
       text-align: right;
     }
   }

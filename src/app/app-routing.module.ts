@@ -30,6 +30,14 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
+    path: 'consult-documents',
+    loadChildren: () =>
+      import('./modules/consult-documents/consult-documents.module').then(
+        (m) => m.ConsultDocumentsModule
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
     path: '404',
     component: NotFoundComponent,
   },

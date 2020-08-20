@@ -1,0 +1,206 @@
+<app-breadcrumb [crumb]="title"></app-breadcrumb>
+<section class="pag-consult-documents consult-documents container-fluid">
+  <div class="container middle box-filter">
+    <div class="row row-item">
+      <div class="col">
+        <label for="inputType">Tipo </label>
+        <select id="inputType" class="form-control">
+          <option selected>Selecione um tipo...</option>
+          <option>Tipo 01</option>
+          <option>Tipo 02</option>
+          <option>Tipo 03</option>
+          <option>Tipo 04</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="inputAdditional">Informações adicionais </label>
+        <select id="inputAdditional" class="form-control">
+          <option selected>Selecione um tipo...</option>
+          <option>Tipo 01</option>
+          <option>Tipo 02</option>
+          <option>Tipo 03</option>
+          <option>Tipo 04</option>
+        </select>
+      </div>
+      <div class="col">
+        <div class="row row-last">
+          <div class="col">
+            <label for="inputValue">Valor </label>
+            <input
+              id="inputValue"
+              type="text"
+              class="form-control box-filter__form-value"
+            />
+          </div>
+          <div class="col-1 align-base">
+            <button type="button" class="btn btn-sicredi">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dinâmico -->
+    <div class="row row-item">
+      <div class="col">
+        <label for="inputType">E/OU </label>
+        <select id="inputType" class="form-control">
+          <option selected>Selecione...</option>
+          <option>E</option>
+          <option>OU</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="inputAdditional">Informações adicionais </label>
+        <select id="inputAdditional" class="form-control">
+          <option selected>Selecione um tipo...</option>
+          <option>Tipo 01</option>
+          <option>Tipo 02</option>
+          <option>Tipo 03</option>
+          <option>Tipo 04</option>
+        </select>
+      </div>
+      <div class="col">
+        <div class="row row-last">
+          <div class="col">
+            <label for="inputValue">Valor </label>
+            <input
+              id="inputValue"
+              type="text"
+              class="form-control box-filter__form-value"
+            />
+          </div>
+          <div class="col-1 align-base">
+            <button type="button" class="btn btn-sicredi">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-btn">
+      <div class="col">
+        <button type="button" class="btn btn-secondary btn-clean">
+          Limpar
+        </button>
+        <button type="button" class="btn btn-sicredi">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container-result middle box-filter">
+    <div class="row">
+      <div class="card-body">
+        <div class="row">
+          <div class="col"><h2>Resultado da pesquisa</h2></div>
+          <div class="col col-pagination">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Anterior</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próximo</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 col-icon">
+        <svg
+          width="2em"
+          height="2em"
+          viewBox="0 0 16 16"
+          class="bi bi-file-earmark"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+          />
+          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+        </svg>
+      </div>
+      <div class="col">
+        <h3 class="container-result__title">Estatuto social de 2020</h3>
+        <p><b>Arquivo:</b> estatuto_2020.pdf</p>
+        <p><b>Autor:</b> anderson_godoi</p>
+        <p><b>Data:</b> 20/05/2020</p>
+        <p>
+          <b> Comentário:</b> is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 col-icon">
+        <svg
+          width="2em"
+          height="2em"
+          viewBox="0 0 16 16"
+          class="bi bi-file-earmark"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+          />
+          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+        </svg>
+      </div>
+      <div class="col">
+        <h3 class="container-result__title">Estatuto social de 2020</h3>
+        <p><b>Arquivo:</b> estatuto_2020.pdf</p>
+        <p><b>Autor:</b> anderson_godoi</p>
+        <p><b>Data:</b> 20/05/2020</p>
+        <p>
+          <b> Comentário:</b> is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 col-icon">
+        <svg
+          width="2em"
+          height="2em"
+          viewBox="0 0 16 16"
+          class="bi bi-file-earmark"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+          />
+          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+        </svg>
+      </div>
+      <div class="col">
+        <h3 class="container-result__title">Estatuto social de 2020</h3>
+        <p><b>Arquivo:</b> estatuto_2020.pdf</p>
+        <p><b>Autor:</b> anderson_godoi</p>
+        <p><b>Data:</b> 20/05/2020</p>
+        <p>
+          <b> Comentário:</b> is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-pagination">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>

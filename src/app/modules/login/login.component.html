@@ -5,15 +5,8 @@
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()"
   >
-    <img
-      alt="Logo Sicredi"
-      class="container-login__logo"
-      src="https://www.sicredi.com.br/static/assets/novo/logo-cor.svg"
-      tabindex="1"
-    />
-
     <label for="userName">
-      User name: *
+      Usuário: *
       <input
         type="text"
         id="userName"
@@ -24,7 +17,7 @@
       />
     </label>
     <label for="pass">
-      Password: *
+      Senha: *
       <input
         type="password"
         class="form-control"
@@ -40,7 +33,7 @@
       [disabled]="!f.valid"
       data-cy="cySubmit"
     >
-      Sign in
+      Logar
     </button>
   </form>
 </div>

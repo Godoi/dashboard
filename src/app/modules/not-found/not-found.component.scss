@@ -1,6 +1,15 @@
 @import 'variables';
 
 .not-found {
+  background-color: map-get($colors, c-lightgray);
+  display: flex;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
   &__content {
     margin: auto;
     width: 750px;
