@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 import { AuthService } from '../../core/authentication/auth.service'
@@ -9,7 +9,7 @@ import { AuthService } from '../../core/authentication/auth.service'
   templateUrl: 'login.component.html',
   styleUrls: ['login.component.scss'],
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   public error = ''
   public loginForm: FormGroup
 
@@ -25,10 +25,6 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) {
     this.constructorForm()
-  }
-
-  ngOnInit(): void {
-    console.log('Init')
   }
 
   constructorForm(): void {
